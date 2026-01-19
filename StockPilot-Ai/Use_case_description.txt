@@ -1,0 +1,110 @@
+
+⸻
+
+HOW TO RUN STOCKPILOT AI (STEP-BY-STEP)
+
+Follow the steps exactly in this order.
+Do not skip any step.
+
+⸻
+
+PREREQUISITES
+
+Before starting, make sure:
+	•	Python 3.10+ is installed
+	•	Android device or emulator is running
+	•	USB debugging is enabled (for physical device)
+	•	Droidrun is installed and configured
+	•	Required Python dependencies are installed using requirements.txt
+
+⸻
+
+STEP 1: OPEN TERMINAL IN PROJECT FOLDER
+
+Open the project folder in VS Code.
+
+Open the terminal and ensure you are inside the project directory that contains:
+	•	run_agent.ps1
+	•	capture_to_json.py
+	•	analyze_stock.py
+
+If needed, navigate to the folder manually using the terminal.
+
+⸻
+
+STEP 2: RUN THE ANDROID AGENT
+
+Run the agent script:
+	•	This step launches the Android automation
+	•	The agent opens Chrome
+	•	Navigates to Screener
+	•	Searches for the target stock (e.g., Infosys)
+	•	Displays stock fundamentals on screen
+
+Important:
+	•	Do NOT close the Android device or emulator
+	•	Leave it running after this step completes
+
+This step is responsible for fetching stock data visually from the mobile app.
+
+⸻
+
+STEP 3: CAPTURE DATA INTO JSON
+
+Run the data capture script.
+
+What this step does:
+	•	Reads on-screen or extracted stock data
+	•	Processes the values
+	•	Creates a structured JSON file named stock_data.json
+
+After completion, confirm that:
+	•	stock_data.json exists in the project folder
+
+⸻
+
+STEP 4: RUN FINAL STOCK ANALYSIS
+
+Run the analysis script.
+
+What this step does:
+	•	Reads data from stock_data.json
+	•	Applies analysis logic
+	•	Produces a final stock verdict
+
+Expected output:
+	•	Display of captured stock data
+	•	A clear analysis result (example: STRONG FUNDAMENTALS)
+
+This is the final output of the pipeline.
+
+⸻
+
+EXECUTION FLOW (IMPORTANT)
+
+Always follow this exact order:
+	1.	Run agent automation (Android UI opens and shows stock data)
+	2.	Capture data into JSON
+	3.	Analyze stock and generate verdict
+
+Skipping or reordering steps will break the pipeline.
+
+⸻
+
+IF SOMETHING FAILS
+
+If you encounter an error, share only:
+	•	The step number (1, 2, 3, or 4)
+	•	The exact error message shown in the terminal
+
+No screenshots needed unless asked.
+
+⸻
+
+FINAL STATUS AFTER SUCCESSFUL RUN
+
+After completing all steps, you will have:
+	•	Autonomous mobile agent execution
+	•	Structured stock data in JSON format
+	•	Automated stock analysis output
+	•	A complete, hackathon-ready agentic pipeline

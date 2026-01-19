@@ -1,0 +1,22 @@
+requirements.txt
+
+Core Mobile Agent Framework
+droidrun
+
+Android device and UI interaction
+adbutils
+uiautomator2
+
+Image processing for screen capture and UI parsing
+opencv-python
+Pillow
+
+Data handling
+numpy
+
+Environment configuration and utilities
+python-dotenv
+requests
+
+Logging
+loguru
