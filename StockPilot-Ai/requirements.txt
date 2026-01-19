@@ -1,5 +1,11 @@
 requirements.txt
 
+note versions 
+
+adbutils==1.2.7
+uiautomator2==2.16.25
+opencv-python==4.9.0.80
+
 Core Mobile Agent Framework
 droidrun
 
