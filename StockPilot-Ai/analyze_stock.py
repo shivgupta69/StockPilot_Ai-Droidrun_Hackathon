@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
     verdict = analyze_stock(data)
 
-    print("📊 Stock Analysis Result")
+    print("Stock Analysis Result")
     print("-----------------------")
     print("Data:", data)
     print("Verdict:", verdict)
