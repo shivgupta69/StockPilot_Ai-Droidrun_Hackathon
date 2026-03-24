@@ -26,7 +26,7 @@ def capture_to_json(screen_text):
     with open("stock_data.json", "w") as f:
         json.dump(data, f, indent=4)
 
-    print("✅ Data saved to stock_data.json")
+    print(" Data saved to stock_data.json")
 
 
 if __name__ == "__main__":
